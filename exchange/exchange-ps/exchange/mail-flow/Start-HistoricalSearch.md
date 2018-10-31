@@ -19,7 +19,7 @@ For information about the parameter sets in the Syntax section below, see Exchan
 
 ```
 Start-HistoricalSearch -EndDate <DateTime> -ReportTitle <String>
- -ReportType <MessageTrace | MessageTraceDetail | DLP | TransportRule | SPAM | Malware | UnifiedDLP | ATPReport | Spoof | ATPV2>
+ -ReportType <MessageTrace | MessageTraceDetail | DLP | TransportRule | SPAM | Phish | Malware | UnifiedDLP | ATPReport | Spoof | ATPV2>
  -StartDate <DateTime> [-DeliveryStatus <String>] [-Direction <All | Sent | Received>]
  [-DLPPolicy <MultiValuedProperty>] [-Locale <CultureInfo>] [-MessageID <MultiValuedProperty>]
  [-NotifyAddress <MultiValuedProperty>] [-OriginalClientIP <String>] [-RecipientAddress <MultiValuedProperty>]
