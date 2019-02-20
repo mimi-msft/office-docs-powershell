@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -SummarizeBy
-The SummarizeBy parameter returns totals based on the values you specify. If your report filters data using any of the values accepted by this parameter, you can use the SummarizeBy parameter to summarize the results based on those values. To decrease the number of rows returned in the report, consider using the SummarizeBy parameter. Summarizing reduces the amount of data that's retrieved for the report, and delivers the report faster. For example, instead of seeing each instance of a specific value of EventType on an individual row in the report, you can use the SummarizeBy parameter to see the total number of instances of that value of EventType on one row in the report.
+The SummarizeBy parameter summarizes the results based on the specified values. This parameter is used to reduce the amount of data retrieved and returned by the cmdlet. For example, summarizing by domain returns the counts for the specific combinations of other columns, regardless of domain (e.g. one row with count of 2 and BCL0 would be returned rather than a row for contoso.com and contoso.onmicrosoft.com where both are BCL0 and have a count of 1)
 
 For the Get-MailTrafficReport cmdlet, the SummarizeBy parameter accepts the values Action, Domain, and EventType. You can specify multiple values separated by commas.
 
